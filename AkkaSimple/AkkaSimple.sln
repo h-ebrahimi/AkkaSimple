@@ -3,43 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkkaSimple", "AkkaSimple\AkkaSimple.csproj", "{4679E1B5-39A8-4D6C-BF85-624B7ACDD87E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkkaSimple", "AkkaSimple.csproj", "{4679E1B5-39A8-4D6C-BF85-624B7ACDD87E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveActorApp", "ReceiveActorApp\ReceiveActorApp.csproj", "{A0281340-4312-4129-9B5D-7B5B59701583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveActorApp", "..\ReceiveActorApp\ReceiveActorApp.csproj", "{A0281340-4312-4129-9B5D-7B5B59701583}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chat", "Chat", "{C73651B5-A9EC-44B0-BC8D-E5E8B22F2CFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatClient", "ChatClient\ChatClient.csproj", "{59B25D78-901C-4410-9DE6-783AADF78986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatClient", "..\ChatClient\ChatClient.csproj", "{59B25D78-901C-4410-9DE6-783AADF78986}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatServer", "ChatServer\ChatServer.csproj", "{3C9E57F6-037C-4DA2-9661-B6BBB7B8D600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatServer", "..\ChatServer\ChatServer.csproj", "{3C9E57F6-037C-4DA2-9661-B6BBB7B8D600}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMessage", "ChatMessage\ChatMessage.csproj", "{64B7A1D3-6F97-46CE-B40A-05AD94D1C5B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMessage", "..\ChatMessage\ChatMessage.csproj", "{64B7A1D3-6F97-46CE-B40A-05AD94D1C5B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka6", "Akka6\Akka6.csproj", "{59913FC9-ABAF-49BA-93FD-12106AFC5006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka6", "..\Akka6\Akka6.csproj", "{59913FC9-ABAF-49BA-93FD-12106AFC5006}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cluster", "Cluster", "{2EA9A157-7455-494B-BA15-D46EEEC12918}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApp", "MainApp\MainApp.csproj", "{6EA2848B-7C5E-410F-908D-E824BB33D13E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApp", "..\MainApp\MainApp.csproj", "{6EA2848B-7C5E-410F-908D-E824BB33D13E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigApp", "ClusterConfig\ConfigApp.csproj", "{DFD9A247-1845-4106-B5DF-6BF70FBC7C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigApp", "..\ClusterConfig\ConfigApp.csproj", "{DFD9A247-1845-4106-B5DF-6BF70FBC7C4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookStore", "BookStore", "{38B28B83-FE9D-4569-97B5-ADC95091BC5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Api", "BookStore\BookStore.Api\BookStore.Api.csproj", "{0D289EEF-5325-4B5B-BBD0-2810DB427801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Api", "..\BookStore\BookStore.Api\BookStore.Api.csproj", "{0D289EEF-5325-4B5B-BBD0-2810DB427801}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain", "BookStore.Domain\BookStore.Domain.csproj", "{2A39FE56-A246-46B3-AB27-2B6A44D9F6BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain", "..\BookStore.Domain\BookStore.Domain.csproj", "{2A39FE56-A246-46B3-AB27-2B6A44D9F6BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain.Test", "BookStore.Domain.Test\BookStore.Domain.Test.csproj", "{CD02AC66-FE2A-458C-ACD2-B68E78217FBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain.Test", "..\BookStore.Domain.Test\BookStore.Domain.Test.csproj", "{CD02AC66-FE2A-458C-ACD2-B68E78217FBC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Infrastructure", "Infrastructure\BookStore.Infrastructure.csproj", "{045DCD44-5678-4A21-9BB0-4AED00A5587B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Infrastructure", "..\Infrastructure\BookStore.Infrastructure.csproj", "{045DCD44-5678-4A21-9BB0-4AED00A5587B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClusterBookStore", "ClusterBookStore", "{0B074863-0BD9-484E-83D8-FDFD4C814E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Api", "ClusterBookStore.Api\ClusterBookStore.Api.csproj", "{33DB148E-32ED-40AA-8A3B-F128B2EAE5FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Api", "..\ClusterBookStore.Api\ClusterBookStore.Api.csproj", "{33DB148E-32ED-40AA-8A3B-F128B2EAE5FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Domain", "ClusterBookStore.Domain\ClusterBookStore.Domain.csproj", "{E8DF0E31-54DC-4A34-8522-71DE542EEF32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Domain", "..\ClusterBookStore.Domain\ClusterBookStore.Domain.csproj", "{E8DF0E31-54DC-4A34-8522-71DE542EEF32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Infrastructure", "BookStore.Infrastructure\ClusterBookStore.Infrastructure.csproj", "{F055642B-3BA0-4F1C-89EB-1C0ECA2674F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterBookStore.Infrastructure", "..\BookStore.Infrastructure\ClusterBookStore.Infrastructure.csproj", "{F055642B-3BA0-4F1C-89EB-1C0ECA2674F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
