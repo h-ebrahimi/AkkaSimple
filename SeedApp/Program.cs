@@ -12,6 +12,7 @@ using Petabridge.Cmd.Remote;
 public class Program
 {
     static string clusterSystem = "ClusterSystem";
+    static int port = 8110;
     public static void Main(string[] args)
     {
         Console.WriteLine("SeedApp");
@@ -23,12 +24,12 @@ public class Program
             service.AddAkka(clusterSystem, options =>
             {
                 options
-                    .WithRemoting("localhost", 8110)
+                    .WithRemoting("localhost", port)
                     .WithClustering(new ClusterOptions
                     {
                         Roles = new string[] { "Seed" },
                         SeedNodes = new[] {
-                        Address.Parse($"akka.tcp://{clusterSystem}@localhost:8110")
+                        Address.Parse($"akka.tcp://{clusterSystem}@localhost:{port}")
                         }
                     })
                     .AddPetabridgeCmd(cmd =>
@@ -40,6 +41,7 @@ public class Program
                     .StartActors((actorSystem, actorRegistery) =>
                     {
                         var cluster = Cluster.Get(actorSystem);
+                        var actor = actorSystem.ActorOf<SimpleClusterListener>();
                         Console.WriteLine(cluster.Settings.MinNrOfMembers);
                     });
             });
