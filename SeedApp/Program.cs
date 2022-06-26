@@ -25,6 +25,7 @@ public class Program
                     .WithRemoting("localhost", 8110)
                     .WithClustering(new ClusterOptions
                     {
+                        Roles = new string[] { "Seed" },
                         SeedNodes = new[] {
                         Address.Parse($"akka.tcp://{clusterSystem}@localhost:8110")
                         }
