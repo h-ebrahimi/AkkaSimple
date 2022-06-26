@@ -19,14 +19,15 @@ namespace ClusterBookStore.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var res = await _factory.ActorRef.Ask<IEnumerable<Book>>(new GetBooks(string.Empty));
-            return Ok(res);
+            //var res = await _factory.ActorRef.Ask<IEnumerable<Book>>(new GetBooks(string.Empty));
+            //return Ok(res);
+            return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CreateBook book)
         {
-            _factory.ActorRef.Tell(book);
+            //_factory.ActorRef.Tell(book);
             return Ok();
         }
     }
