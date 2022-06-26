@@ -23,11 +23,11 @@ public class Program
                     .WithRemoting("Localhost", 0)
                     .WithClustering(new ClusterOptions
                     {
-                        Roles = new string[] {"NonSeed" },
+                        Roles = new string[] { "NonSeed" },
                         SeedNodes = new[] {
                         Address.Parse($"akka.tcp://{clusterSystem}@localhost:8110")
                         }
-                    }) 
+                    })                    
                     .AddPetabridgeCmd(cmd =>
                     {
                         Console.WriteLine("   PetabridgeCmd Added");
@@ -37,6 +37,10 @@ public class Program
             });
         });
         builder.Build().Run();
+
+
+        
+
         Console.ReadLine();
     }
 
