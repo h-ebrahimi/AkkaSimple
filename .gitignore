@@ -33,3 +33,8 @@
 /ReceiveActorApp/bin/Debug/net5.0
 /ReceiveActorApp/obj
 /obj
+/NonSeedApp/bin
+/NonSeedApp/obj
+/SeedApp/bin
+/SeedApp/obj
+
