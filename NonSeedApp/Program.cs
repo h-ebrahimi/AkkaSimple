@@ -36,10 +36,8 @@ public class Program
                     });
             });
         });
-        builder.Build().Run();
-
-
         
+        builder.Build().Run();
 
         Console.ReadLine();
     }

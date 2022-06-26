@@ -1,5 +1,6 @@
 ﻿
 using Akka.Actor;
+using Akka.Cluster;
 using Akka.Cluster.Hosting;
 using Akka.Hosting;
 using Akka.Remote.Hosting;
@@ -35,11 +36,21 @@ public class Program
                         Console.WriteLine("   PetabridgeCmd Added");
                         cmd.RegisterCommandPalette(new RemoteCommands());
                         cmd.RegisterCommandPalette(ClusterCommands.Instance);
+                    })
+                    .StartActors((actorSystem, actorRegistery) =>
+                    {
+                        var cluster = Cluster.Get(actorSystem);
+                        Console.WriteLine(   cluster.Settings.MinNrOfMembers);
                     });
             });
+                
         });
+        
+
         var app = appBuilder.Build();
-        app.Run();
+        app.RunAsync().Wait();
+        
+        var sys = ActorSystem.Create(clusterSystem);
         Console.ReadLine();
     }
 }
