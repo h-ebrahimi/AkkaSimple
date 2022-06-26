@@ -9,7 +9,6 @@ namespace BookStore.Api.Controllers
     public class BookStoreController : ControllerBase
     {
         private readonly ActorFactory _factory;
-       
 
         public BookStoreController(ActorFactory factory , IBookRepository repo)
         {
